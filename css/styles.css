@@ -1,14 +1,20 @@
 /* цвет основного текста background: #212121;*/
 /* цвет вторичного текста : #757575;*/
 /* цвет акцента background: #2196F3;*/
+:root {
+    --primery-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-text-color: #2196f3;
+    --link-text-color:#FFFFFF;
+}
 
 
 .body { font-family: Roboto, Raleway sans-serif;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
-    background-color:#E5E5E5;}
+    color:var (var(--primery-text-color));
+    background-color:#FFFFFF;}
 
     ul { list-style: none;}
     .none-link {text-decoration:none;}
@@ -20,29 +26,22 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #2196F3;}
+color: var(--accent-text-color);}
 
-.site-nav {
+.site-nav,.contact {
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;}
+    color:var(--secondary-text-color);}
 
 .site-nav .link:hover, 
 .site-nav .link:focus {color: #2196F3;}
 
-.contact{font-family: Roboto;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;   
-     letter-spacing: 0.02em;    
-    color:#757575;}
-
     /* контакт в хедере и футере */
     .contact .link:focus,
-   .contact .link:hover { color: #2196F3}
+   .contact .link:hover {color: #2196F3;}
 
 /*Скрытый загловок*/
 .visually-hidden {
@@ -65,13 +64,39 @@ color: #2196F3;}
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-         color: #FFFFFF;}
+        text-transform:uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercas;}
+
+
          /* Footer*/
-.footer {font-family: Roboto;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    background-color: #2F303A; }
-.conact-footer { color: rgba(255, 255, 255, 0.6);;}
+         .footer {
+             font-family: Roboto;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: #ffffff;
+            background-color: #2F303A; }
+
+        .conact-footer { color: rgba(255, 255, 255, 0.6);}
+
+ /* button */
+ .btn-hero {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+     color: #FFFFFF;
+    background-color: #2196F3;
+    cursor: pointer;
+ align-items: center;
+ text-align: center;
+ letter-spacing: 0.06em
+}
+ .btn-hero:hover,
+ .btn-hero:focus { background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
+
 
