@@ -1,20 +1,77 @@
-body {font-family: Roboto, Raleway, sans-serif;
+/* цвет основного текста background: #212121;*/
+/* цвет вторичного текста : #757575;*/
+/* цвет акцента background: #2196F3;*/
+
+
+.body { font-family: Roboto, Raleway sans-serif;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
-    background-color: #FFFFFF;
-}
-/* Шапка сайта*/
-.nav-header {
+    background-color:#E5E5E5;}
 
-}
-.logo-header { font-family: Raleway, sans-serif;
+    ul { list-style: none;}
+    .none-link {text-decoration:none;}
+
+/* Шапка сайта*/
+
+.logo{ font-family: Raleway, sans-serif;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #2196F3;
-}
+color: #2196F3;}
 
- 
+.site-nav {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {color: #2196F3;}
+
+.contact{font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;   
+     letter-spacing: 0.02em;    
+    color:#757575;}
+
+    /* контакт в хедере и футере */
+    .contact .link:focus,
+   .contact .link:hover { color: #2196F3}
+
+/*Скрытый загловок*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden; }
+
+    /* HERO */
+    .hero { background-color: #2F303A;}
+    .hero-title { 
+        font-family: Roboto;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+         color: #FFFFFF;}
+         /* Footer*/
+.footer {font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: #2F303A; }
+.conact-footer { color: rgba(255, 255, 255, 0.6);;}
+
