@@ -6,6 +6,9 @@
   --secondary-text-color: #757575;
   --accent-text-color: #2196f3;
   --link-text-color: #ffffff;
+  --background-hero-footer-color: #2f303a;
+  --contact-footer-text-color: rgba(255, 255, 255, 0.6);
+  --btn-portfolio-color: #f5f4fa;
 }
 
 .body {
@@ -42,14 +45,18 @@ ul {
 .logo-footer {
   color: var(--link-text-color);
 }
-
 .site-nav .link,
 .contact .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.contact .link {
   color: var(--secondary-text-color);
+}
+.site-nav .link {
+  color: var(--primery-text-color);
 }
 
 /* Ссылки и контакты в хедере и футере*/
@@ -131,7 +138,7 @@ ul {
 
 /* HERO */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-hero-footer-color);
 }
 .hero-title {
   font-weight: 900;
@@ -149,12 +156,12 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--link-text-color);
-  background-color: #2f303a;
+  background-color: var(--background-hero-footer-color);
 }
 
 .contact-footer .link {
   font-family: inherit;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contact-footer-color);
 }
 .address-footer {
   color: var(--link-text-color);
@@ -185,14 +192,14 @@ ul {
   cursor: pointer;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
-  background: #f5f4fa;
+  background-color: var(-btn-portfolio-color);
 }
 
 .btn-hero:hover,
 .btn-hero:focus,
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-  background-color: #188ce8;
+  background-color: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--link-text-color);
 }
